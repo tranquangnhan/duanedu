@@ -1,0 +1,1064 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(SVN-Androgyne.ttf);
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&family=Oswald:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 22pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 160%;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.boxcenter {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.boxcontentbn {
+    z-index: 2;
+    top: 0;
+    position: absolute;
+    width: 90%;
+    height: 500px;
+}
+
+
+/* code slide */
+
+.slide {
+    position: relative;
+    width: 1349px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.chuyen-slide {
+    width: 9999px;
+    transition: all 0.8s;
+}
+
+.chuyen-slide img {
+    width: 1349px;
+    height: 600px;
+    object-fit: cover;
+    float: left;
+}
+
+.dieuhuong {
+    position: absolute;
+    top: 48%;
+    cursor: pointer;
+}
+
+.dieuhuong i {
+    position: absolute;
+    z-index: 100;
+    left: 50px;
+    color: white;
+}
+
+.dieuhuong i:last-child {
+    position: absolute;
+    left: 1275px;
+    z-index: 100;
+}
+
+
+/* end code slide */
+
+.hieuung {
+    animation-name: anims;
+    animation-duration: 2s;
+    z-index: 2;
+}
+
+@keyframes anims {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes anims {
+    from {
+        opacity: 0;
+        transition: all 1s;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* start slideshow */
+
+.left {
+    position: absolute;
+    left: 30px;
+    top: 45%;
+    z-index: 3;
+    color: white;
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    right: 30px;
+    top: 45%;
+    z-index: 3;
+    color: white;
+    cursor: pointer;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px;
+    min-height: 100px;
+    margin-top: 30px;
+}
+
+.navbar__rgba {
+    display: none;
+}
+
+.navbar__icon {
+    display: none;
+}
+
+.menu {
+    min-height: 80px;
+    /* float: left; */
+    margin-left: 700px;
+}
+
+.menu sub {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.menu ul li {
+    float: left;
+    position: relative;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.menu ul li ul {
+    margin-top: 5px;
+    position: absolute;
+    background-color: #151515;
+    padding: 0;
+    height: 75px;
+    padding: 10px 0;
+    display: none;
+    width: 120px;
+}
+
+.menu ul li ul li {
+    float: none;
+}
+
+.menu ul li ul li a {
+    line-height: 23px;
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+.text-banner {
+    width: 39%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 65px;
+    text-align: center;
+}
+
+.text-banner h2 {
+    /* margin-left: 50px; */
+    font-size: 22pt;
+}
+
+.cms {
+    font-family: myFirstFont;
+}
+
+.icons-banner {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.box1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 10pt;
+    float: left;
+    margin-left: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.welcome {
+    clear: both;
+    padding-top: 25px;
+}
+
+.welcome .welcome__p-mobile {
+    display: none;
+}
+
+.welcome h1 {
+    font-size: 30pt;
+    margin-top: 15px;
+}
+
+.rgba {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    float: left;
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-y;
+    min-height: 800px;
+    background-size: 1350px 700px;
+    position: relative;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content .abu {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content img {
+    height: 300px;
+}
+
+.content__parent-about .content-parent {
+    position: relative;
+}
+
+.content-shadow {
+    position: absolute;
+    left: 1%;
+    top: 70%;
+    width: 87% !important;
+    margin-left: 19px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 8px #999;
+    height: 390px;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    color: white;
+    background-color: #89dfce;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 auto;
+}
+
+.yl {
+    background-color: rgba(252, 235, 0, 0.4);
+}
+
+.content__parent-about .content-text h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content__parent-about .content-text p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.teacher {
+    min-height: 800px;
+    background-color: #13bf9e;
+}
+
+.student img,
+.teacher img {
+    padding-top: 80px;
+}
+
+.teacher h2 {
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.gach {
+    width: 70%;
+    margin: 5px 0 50px 2px;
+    border-bottom: 3px solid #ffe266;
+}
+
+.text-teacher {
+    padding-top: 20px;
+    width: 60%;
+    margin-left: 50px;
+    color: white;
+    line-height: 30px;
+}
+
+.text-teacher h2 {
+    line-height: 50px;
+}
+
+.cl-w a {
+    color: white !important;
+}
+
+.cl-b {
+    color: black !important;
+}
+
+.cl-b a {
+    color: black;
+}
+
+.icon-check i {
+    float: left;
+    width: 30px;
+    height: 80px;
+}
+
+.quyenloi-check {
+    margin-left: 40px;
+}
+
+.quyenloi-check div {
+    margin: 10px 0;
+}
+
+.check {
+    margin: 10px 0;
+}
+
+.btn-dk {
+    width: 180px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #ffe266;
+    text-align: center;
+    line-height: 60px;
+    margin: 50px 0;
+    font-size: 13pt;
+    transition: all 0.5s;
+}
+
+.btn-dk:hover {
+    background-color: #e74c3c;
+}
+
+.btn-dk:hover a {
+    color: white !important;
+}
+
+.btn-dk a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.student {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-x;
+    min-height: 600px;
+    background-size: 1350px 1000px;
+}
+
+.icon-blue {
+    width: 100px;
+    margin: 0 auto;
+    min-height: 220px;
+    color: white;
+    font-size: 17pt;
+    margin-top: 80px;
+}
+
+.icon-blue i {
+    font-size: 45pt;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.icon-blue #lop {
+    float: left;
+}
+
+.lop-hoc {
+    clear: both;
+}
+
+.icon-blue span {
+    float: left;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.btn-fag {
+    width: 220px;
+    height: 40px;
+    margin: 0 auto;
+    box-shadow: 3px 2px 5px #888;
+}
+
+.btn-giasu {
+    background-color: #ffe266;
+    border-radius: 3px 0 0 3px;
+}
+
+.btn-giasu,
+.btn-hocvien {
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    float: left;
+    margin: 0 auto;
+}
+
+.btn-hocvien {
+    background-color: white;
+    border-radius: 0 3px 3px 0px;
+}
+
+.faq__text-item i {
+    float: left;
+    margin-right: 20px;
+}
+
+.boxtext-faq {
+    width: 80%;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 80px;
+    background-color: #f2f2f2;
+}
+
+.boxtext-faq p {
+    width: 90%;
+    padding: 30px 20px 0 20px;
+    font-size: 11pt;
+}
+
+.uudai {
+    background-image: url('../images/giasu2.png');
+    text-align: center;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: 1350px 800px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.uudai .uudai-content p {
+    font-weight: bold;
+    font-size: 23pt;
+}
+
+.hand {
+    padding: 10px 0;
+    color: white;
+}
+
+.uudai h2 {
+    color: red;
+    padding-top: 40px;
+}
+
+.bg-g {
+    background-color: #13bf9e;
+    margin: 0 auto;
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.text-faq i,
+p {
+    padding: 10px 0;
+}
+
+.uudai-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.map {
+    width: 50%;
+    float: left;
+    background-color: #f7f7f7;
+    min-height: 600px;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    min-height: 600px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    padding-left: 50px;
+    background-color: #f7f7f7;
+    min-height: 600px;
+    width: 50%;
+    float: left;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.footer i {
+    float: left;
+    margin-right: 20px;
+}
+
+.text-footer {
+    width: 70%;
+}
+
+.foot-end {
+    background-color: #0b7a64;
+    min-height: 150px;
+    color: white;
+    text-align: center;
+}
+
+.col-4 {
+    width: 32%;
+    float: left;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.col-6 {
+    width: 49%;
+    float: left;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.pt-5 {
+    padding-top: 5rem;
+}
+
+.blue {
+    background-color: #13bf9e;
+    min-height: 300px;
+}
+
+.faq {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-x;
+    min-height: 600px;
+    background-size: 1350px 1000px;
+    min-height: 600px;
+}
+
+.go-to-top {
+    width: 100px;
+    min-height: 40px;
+    background-color: #999;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #999;
+    cursor: pointer;
+    display: none;
+}
+
+.go-to-top:hover {
+    background-color: #333;
+    box-shadow: 1px 2px 3px #555;
+}
+
+
+/* respointsive */
+
+
+/* tablet  */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .slide {
+        width: 100% !important;
+    }
+    .dieuhuong {
+        display: none;
+    }
+    .text-banner {
+        width: 70%;
+    }
+    .content__parent-about .content-shadow {
+        display: none;
+    }
+    .mt-0 {
+        margin-top: 0;
+    }
+    .mb-0 {
+        margin-bottom: 0;
+    }
+    /* teacher and student */
+    .teacher .text-teacher h2,
+    .student .text-teacher h2 {
+        width: 100%;
+        /* height: 300px; */
+        text-align: center;
+        font-size: 23pt;
+    }
+    .teacher,
+    .student {
+        min-height: 620px;
+        flex-direction: column;
+    }
+    .teacher .quyenloi,
+    .student .quyenloi {
+        display: none;
+    }
+    .teacher .teacher__img img,
+    .student .student__img img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 30px;
+    }
+    /* teacher and student */
+    /* Ưu đãi */
+    .uudai {
+        min-height: 470px;
+    }
+    .contact .footer {
+        height: 700px;
+        font-size: 13pt;
+    }
+    .contact .footer .google,
+    .contact .footer .face,
+    .contact .footer .linkedin {
+        display: none;
+    }
+    .contact .footer i {
+        margin: 5px 10px 0 0;
+    }
+    /* menu */
+    .menu {
+        display: none;
+    }
+    .navbar__icon {
+        display: block;
+    }
+    #navmb__off {
+        display: none;
+        float: right;
+        font-weight: bold;
+        margin: 0px 10px;
+        font-size: 16pt;
+    }
+    .navbar__icon {
+        float: left;
+        margin: 20px 25px;
+        z-index: 4;
+        position: fixed;
+        color: black;
+        cursor: pointer;
+    }
+    .navbar__icon i {
+        font-size: 40px;
+    }
+    .navbar__mobile {
+        display: block;
+        width: 57%;
+        background-color: white;
+        height: 1000px;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .navbar__mobile ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+    .navbar__mobile ul li {
+        margin: 20px 0;
+    }
+    .navbar__mobile ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navbar__rgba {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        display: none;
+        animation: rgba 1s ease;
+    }
+    @keyframes rgba {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* end menu */
+    .boxtext-faq {
+        height: 200px;
+    }
+}
+
+
+/* mobile */
+
+@media only screen and (max-width:739px) {
+    /* menu */
+    .menu {
+        display: none;
+    }
+    .navbar__icon {
+        display: block;
+    }
+    #navmb__off {
+        display: none;
+        float: right;
+        font-weight: bold;
+        margin: 0px 10px;
+        font-size: 16pt;
+    }
+    .navbar__icon {
+        float: left;
+        margin: 17px 20px;
+        z-index: 4;
+        position: fixed;
+        color: black;
+        cursor: pointer;
+    }
+    .navbar__icon i {
+        font-size: 32px;
+    }
+    .navbar__mobile {
+        display: block;
+        width: 57%;
+        background-color: white;
+        height: 1000px;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+    .navbar__mobile ul {
+        list-style: none;
+        padding-top: 10px;
+    }
+    .navbar__mobile ul li {
+        margin: 20px 0;
+    }
+    .navbar__mobile ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navbar__rgba {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        display: none;
+        animation: rgba 1s ease;
+    }
+    @keyframes rgba {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* end menu */
+    .boxbanner {
+        min-height: 500px;
+    }
+    .slide {
+        width: 100%;
+    }
+    .chuyen-slide img {
+        object-fit: cover;
+    }
+    .dieuhuong {
+        display: none;
+    }
+    .text-banner .icons-banner {
+        display: none;
+    }
+    .text-banner .cms {
+        display: none;
+    }
+    .text-banner {
+        width: 100%;
+    }
+    .text-banner .welcome h1 {
+        width: 100%;
+    }
+    .text-banner .welcome p {
+        display: none;
+    }
+    .text-banner .welcome .welcome__p-mobile {
+        display: block;
+    }
+    .logo img {
+        width: 70px;
+        min-height: 50px;
+    }
+    .content .abu {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .col-4,
+    .col-6 {
+        width: 100%;
+    }
+    .content {
+        min-height: 250px;
+    }
+    .content .content__parent-about {
+        display: none;
+    }
+    .content__parent-about .content-shadow {
+        display: none;
+    }
+    .teacher,
+    .student {
+        min-height: 920px;
+        flex-direction: column;
+    }
+    .student {
+        padding-top: 0 !important;
+    }
+    .teacher .text-teacher,
+    .student .text-teacher {
+        width: 80%;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .teacher .text-teacher h2,
+    .student .text-teacher h2 {
+        width: 100%;
+        /* height: 300px; */
+        text-align: center;
+        font-size: 25pt;
+    }
+    .teacher .text-teacher .gach,
+    .student .text-teacher .gach {
+        margin: 0 auto;
+    }
+    .teacher .quyenloi,
+    .student .quyenloi {
+        display: none;
+    }
+    .teacher .teacher__img,
+    .student .student__img {
+        width: 100%;
+    }
+    .teacher .teacher__img img,
+    .student .student__img img {
+        width: 65%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 30px;
+    }
+    .student .student__img img {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .teacher .btn-dk,
+    .student .btn-dk {
+        margin: 0 auto;
+    }
+    .student__content {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .class .col-4 {
+        width: 32%;
+    }
+    .faq__text-item {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .faq__text-item p {
+        width: 100%;
+        font-size: 11pt;
+    }
+    .faq__text-item .boxtext-faq {
+        /* flex-direction: row; */
+        display: none;
+    }
+    .faq__text-item .fa-comments {
+        font-size: 18px !important;
+    }
+    .uudai .uudai-content h2 {
+        padding-top: 10px;
+    }
+    .uudai .uudai-content p {
+        font-size: 18pt;
+    }
+    /* footer */
+    .contact .footer {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    .contact .footer-logo {
+        width: 30%;
+    }
+    .contact .footer .text-footer {
+        width: 90%;
+        text-align: center;
+    }
+    .contact .footer h3 {
+        text-align: center;
+    }
+    .contact .map {
+        width: 100%;
+    }
+}

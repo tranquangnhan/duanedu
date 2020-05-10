@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Sư</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="navbar__rgba" id="navbarrg"></div>
+    <div class="row">
+        <div class="navbar__icon" id="navbaric">
+            <i class="fa fa-navicon"></i>
+        </div>
+        <div class="navbar__mobile" id="navbarmb">
+            <ul>
+                <div id="navmb__off">X</div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="">See more</a></li>
+            </ul>
+        </div>
+        <div class="slide">
+            <div class="dieuhuong">
+                <i class="fa fa-chevron-left" style="font-size:36px" onclick="lui()"></i>
+                <i class="fa fa-chevron-right" style="font-size:36px" onclick="tiep()" id="hieuung"></i>
+            </div>
+            <div class="chuyen-slide">
+                <img src="images/banner-min.png" alt="">
+                <img src="images/banner2.jpg" alt="">
+                <img src="images/banner3.jpg" alt="">
+                <img src="images/banner4.jpg" alt="">
+            </div>
+            <div class="boxcenter">
+                <div class="boxcontentbn">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="menu" id="home">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#community">Community</a></li>
+                            <li><a href="">See more <sub>^</sub></a>
+                                <ul>
+                                    <li><a href="">FAQs</a>
+                                        <li><a href="#contact">Contact</a>
+                                </ul>
+                                </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="text-banner">
+                        <h2 class="cms">Comming soon!</h2>
+                        <div class="icons-banner">
+                            <div class="box1">-<br> Days
+                            </div>
+                            <div class="box1">-<br> hour
+                            </div>
+                            <div class="box1">-<br> minutes
+                            </div>
+                        </div>
+
+                        <div class="welcome">
+                            <h1>Welcome to DigEdu</h1>
+                            <p>Chào mừng bạn đến với chúng tôi, chúng tôi là một tập đoàn thương hiệu, đã có kinh nghiệp giảng dạy cho khắp toàn thể các sinh viên đa quốc gia
+                            </p>
+                            <p class="welcome__p-mobile">Chào mừng bạn đến với chúng tôi, chúng tôi là một tập đoàn thương hiệu, đã có kinh nghiệp giảng dạy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rgba"></div>
+        </div>
+    </div>
+    <div class="row mb-3 mb-0">
+        <div class="content">
+            <div class="boxcenter mt-3">
+                <h2 id="about">About US</h2>
+                <p class="abu">Tập đoàn gia sư lớn nhất thế giới*. Chúng tôi có hơn 2000 nhãn hiệu khác nhau, từ các thương hiệu biểu tượng toàn cầu cho đến các thương hiệu địa phương được yêu thích, và chúng tôi đang hiện diện tại 191 quốc gia trên toàn thế giới
+                </p>
+                <div class="row content__parent-about mt-3">
+                    <div class="col-4 mr content-parent">
+                        <img src="images/content1.png" alt="">
+                        <div class="row">
+                            <div class="col-4 content-shadow yl mr ">
+                                <div class="icon ">
+                                    <i class="fa fa-eye" style="font-size:36px"></i>
+                                </div>
+                                <div class="content-text">
+                                    <h3>Mục Đích </h3>
+                                    <p>Mục đích của chúng tôi là nâng cao chất lượng cuộc sống và góp phần vào một tương lai khỏe mạnh hơn. Chúng tôi mong muốn tạo ra một thế giới tốt đẹp và khỏe mạnh hơn. Chúng tôi cũng mong muốn mọi người sống lành mạnh
+                                        hơn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mr content-parent">
+                        <img src="images/content2.png" alt="">
+                        <div class="row">
+                            <div class="col-4 content-shadow mr">
+                                <div class="icon">
+                                    <i class="fa fa-heart" style="font-size:36px"></i>
+                                </div>
+                                <div class="content-text">
+                                    <h3>Tham Vọng</h3>
+                                    <p>Chúng tôi đã xác định ba tham vọng tổng thể cho năm 2030 sẽ dẫn dắt chúng tôi hoạt động để hỗ trợ cho Các Mục Tiêu Phát Triển Bền Vững của Liên Hiệp Quốc.Giúp cải thiện cuộc sống của 30 triệu người
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 content-parent">
+                        <img src="images/content3.png" alt="">
+                        <div class="row">
+                            <div class="col-4 content-shadow ">
+                                <div class="icon">
+                                    <i class="fa fa-check" style="font-size:36px"></i>
+                                </div>
+                                <div class="content-text">
+                                    <h3>Giá Trị</h3>
+                                    <p>Chúng tôi mong muốn tạo ra một thế giới tốt đẹp và khỏe mạnh hơn. Đó cũng là cách Nestlé khởi đầu từ cách đây hơn 150 năm khi ông Henri Nestlé phát minh ra ngũ cốc dành cho trẻ sơ sinh để cứu sống một em bé.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 mt-0">
+        <div class="teacher">
+            <div class="boxcenter">
+                <div class="col-6 mr">
+                    <div class="text-teacher">
+                        <h2>ĐĂNG KÝ TRỞ THÀNH GIA SƯ</h2>
+                        <div class="gach"></div>
+                        <p class="text-teacher-p">Thỏa ước mơ đi làm gia sư kiếm tiền<br> Gia sư online mang lại nhiều việc làm<br>Công việc đảm bảo và uy tín
+                        </p>
+                        <div class="quyenloi">
+                            <div>> Cam kết của chúng tôi</div>
+                            <div class="quyenloi-check">
+                                <div class="icon-check">
+                                    <i class="fa fa-check" style="font-size:24px"></i>
+                                </div>
+                                <div> Trở thành một gia sư online chắc hẳn sẽ giúp bạn thao tác thành thạo về mặt quy trình làm việc chuyên nghiệp</div>
+
+                                <div class="icon-check">
+                                    <i class="fa fa-check" style="font-size:24px"></i>
+                                </div>
+                                <div> Trở thành một gia sư online chắc hẳn sẽ giúp bạn thao tác thành thạo về mặt quy trình làm việc chuyên nghiệp</div>
+
+                            </div>
+                            <div class="check">> Được hỗ trợ tận tình</div>
+                            <div>> Dụng cụ giảng dạy tốt</div>
+                        </div>
+                        <div class="btn-dk cl-b"><a href="">Đăng kí ngay</a></div>
+                    </div>
+                </div>
+                <div class="col-6 teacher__img">
+                    <img src="images/giasu1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row student">
+        <div class="student">
+            <div class="boxcenter student__content">
+                <div class="col-6 student__img ">
+                    <img src="images/student1.png" alt="">
+                </div>
+                <div class="col-6 mr">
+                    <div class="text-teacher cl-b">
+                        <h2 id="community">ĐĂNG KÝ HỌC TẠI DIGEDU</h2>
+                        <div class="gach"></div>
+                        <p class="text-teacher-p">Ngày nay nhu cầu học tập của các em học sinh nói riêng và nhu cầu học thêm của tất cả mọi người nói chung, ngày một nhiều hơn, chất lượng cũng đòi hỏi cao hơn
+                        </p>
+                        <div class="quyenloi">
+                            <div>> Cam kết của chúng tôi</div>
+                            <div class="quyenloi-check">
+                                <div class="icon-check">
+                                    <i class="fa fa-check" style="font-size:24px"></i>
+                                </div>
+                                <div> Trở thành một gia sư online chắc hẳn sẽ giúp bạn thao tác thành thạo về mặt quy trình làm việc chuyên nghiệp </div>
+
+                                <div class="icon-check">
+                                    <i class="fa fa-check" style="font-size:24px"></i>
+                                </div>
+                                <div> Trở thành một gia sư online chắc hẳn sẽ giúp bạn thao tác thành thạo về mặt quy trình làm việc chuyên nghiệp</div>
+
+                            </div>
+                            <div class="check">> Được hỗ trợ tận tình</div>
+                            <div>> Dụng cụ giảng dạy tốt</div>
+                        </div>
+                        <div class="btn-dk cl-w"><a href="">Tạo ngay yêu cầu</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="blue class">
+            <div class="boxcenter">
+                <div class="col-4  mr class__item">
+                    <div class="icon-blue">
+                        <i class='fas fa-chalkboard-teacher'></i>
+                        <div id="lop">
+
+                        </div><span>+</span>
+                        <br>
+                        <div class="lop-hoc">Lớp học</div>
+                    </div>
+                </div>
+                <div class="col-4  mr class__item">
+                    <div class="icon-blue">
+                        <i class="fa fa-graduation-cap"></i> 923+
+                        <br> Gia Sư
+                    </div>
+                </div>
+                <div class="col-4 class__item">
+                    <div class="icon-blue">
+                        <i class="fa fa-group"></i> 3295+
+                        <br> Truy Cập
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="faq pt-5 mb-5">
+            <div class="boxcenter">
+                <h2>FAQs</h2>
+                <div class="btn-fag">
+                    <div class="btn-giasu">Gia sư</div>
+                    <div class="btn-hocvien">Học viên</div>
+                </div>
+
+                <div class="faq__text-item ">
+                    <i class="fa fa-comments" style="font-size:30px"></i>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate?</p>
+                    <div class="boxtext-faq">
+                        <p> Duis aute irure dolor in reprehenderit in voluptate?Duis aute irure dolor in reprehenderit in voluptate?Duis aute irure dolor in reprehenderit in voluptate?Duis aute irure dolor in reprehenderit in voluptate?Duis aute irure dolor
+                            in reprehenderit in voluptate?Duis aute irure dolor in reprehenderit in voluptate?Duis aute irure dolor in reprehenderit in voluptate?
+                        </p>
+                    </div>
+                    <i class="fa fa-comments" style="font-size:30px"></i>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate?</p>
+                    <i class="fa fa-comments" style="font-size:30px"></i>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate?</p>
+                    <i class="fa fa-comments" style="font-size:30px"></i>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate?</p>
+                    <i class="fa fa-comments" style="font-size:30px"></i>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate?</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="uudai">
+            <div class="bg-white"></div>
+            <div class="uudai-content">
+                <h2>Ưu Đãi</h2>
+                <p> Đăng kí học ngay hôm nay để được giảm ngay 1.500.000đ</p>
+                <div class="hand">
+                    <i class="fa fa-hand-o-down" style="font-size:36px"></i>
+                </div>
+                <div class="btn-dk bg-g cl-w"><a href="">Đăng ký dạy</a></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row ">
+        <div class="contact">
+
+            <div class=" footer pb-3 pt-3">
+                <div class="footer-logo">
+                    <img src="images/logo-footer.png" alt="">
+                </div>
+                <div class="text-footer">
+                    <p>Toán – Lý – Hóa – Sinh – Văn – Tiếng Anh…<br> Gia sư dạy kèm tại nhà giúp các bạn hiểu bài nhanh<br> Luôn tận tâm - Đam mê - Nhiệt huyết với học sinh
+                    </p>
+                </div>
+                <h3>Contacts us</h3>
+                <i class="fa fa-map-marker" style="font-size:36px"></i>
+                <p>Thôn 86, xã ea tiêu , huyện CưKuin, tỉnh Daklak, Việt Nam</p>
+                <i class="fa fa-phone-square" style="font-size:36px"></i>
+                <p>0924698776</p>
+                <i class="fa fa-envelope" style="font-size:36px"></i>
+                <p>tranquangnhan1606@gmail.com</p>
+                <div class="linkedin" id="contact">
+                    <i class="fa fa-envelope" style="font-size:36px"></i>
+                </div>
+                <div class="google">
+                    <i class="fa fa-phone-square" style="font-size:36px"></i>
+                </div>
+                <div class="face">
+                    <i class="fa fa-map-marker" style="font-size:36px"></i>
+                </div>
+            </div>
+            <div class=" map pb-3 pt-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.4520894492553!2d108.07551991412072!3d12.618319825947363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f5be8b29ce45%3A0xda831ac746fa1bcc!2zVGjDtG4gODYgRWEgVGnDqnU!5e0!3m2!1svi!2s!4v1585734920824!5m2!1svi!2s"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <div class="go-to-top" id="gototopid">go to top</div>
+    <div class="row foot-end">
+        <p> Developping by Tran Quang Nhan</p>
+    </div>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>
