@@ -1,11 +1,41 @@
-@font-face {
+/* @font-face {
     font-family: myFirstFont;
     src: url(SVN-Androgyne.ttf);
     font-weight: bold;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500&family=Oswald:wght@700&display=swap'); */
+
+@font-face {
+    font-family: MyriadPro;
+    src:url('../font/MyriadPro.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+   }
+
+@font-face {
+    font-family: Avo;
+    src:url('../font/SVN-Avo.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: AvoItalic;
+    src:url('../font/SVN-Avo italic.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+   }
+
+@font-face {
+    font-family: Androgyne;
+    src:url('../font/UTM Androgyne.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+   }
+   
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -18,12 +48,13 @@ html {
 
 h2,
 h3 {
-    font-family: 'Oswald', sans-serif !important;
+    font-family: Androgyne;
     font-size: 22pt;
 }
 
 h2 {
     font-size: 30pt;
+    font-family: Androgyne;
 }
 
 body {
@@ -32,9 +63,9 @@ body {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 160%;
-    font-family: 'Manrope', sans-serif !important;
+    font-family: MyriadPro;
 }
 
 .row {
