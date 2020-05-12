@@ -74,7 +74,7 @@ p {
 }
 
 .boxcenter {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -602,6 +602,7 @@ p {
     z-index: 2;
 }
 
+
 .map {
     width: 50%;
     float: left;
@@ -794,6 +795,8 @@ p {
     .contact .footer i {
         margin: 5px 10px 0 0;
     }
+
+
     /* menu */
     .menu {
         display: none;
@@ -868,6 +871,7 @@ p {
     .boxtext-faq {
         height: 200px;
     }
+    /* Phúc Bình tablet */
 }
 
 
@@ -1092,4 +1096,346 @@ p {
     .contact .map {
         width: 100%;
     }
+    /* Phúc Bình Mobile*/
+    h2.title {
+        font-size: 25px;
+    }
+    
+
+    .step {
+        width: 100% !important;
+        text-align: center;
+        height: unset !important;
+    }
+
+    .huongdan {
+        text-align: center;
+    }
+
+    .line-box {
+        display: none;
+    }
+
+    .huongdan_img {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .huongdan_btn>div {
+        padding: 0 30px !important;
+    }
+
+    .huongdan .box {
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    .huongdan .page .boxcenter {
+        flex-direction: column;
+    }
+
+    .review .boxcenter {
+        flex-direction: column;
+    }
+
+    .huongdan .page {
+        min-height: unset !important;
+    }
+
+    .review .col-4 {
+        width: 100% !important;
+        display: none;
+    }
+
+    .review .col-4:first-child {
+        display: block;
+    }
 }
+
+
+/* Phúc Bình */
+
+/* Hướng dẫn*/
+.huongdan {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat;
+}
+
+span {
+    font-family: Androgyne;
+}
+
+.goc {
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-top: 30px solid #13bf9e;
+    position: absolute;
+    top: -1px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.huongdan .page {
+    min-height: 100vh;
+    font-size: 20px;
+    position: relative;
+    z-index: 99;
+    padding: 20px 0;
+}
+
+.huongdan .page:nth-child(2n) {
+    background-color: #13bf9e;
+    color: #fff;
+}
+
+.huongdan .page:nth-child(2n) .goc {
+    border-top-color: #fff ;
+}
+
+.huongdan .page .boxcenter {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    position: relative;
+}
+
+.huongdan_title {
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.title {
+    margin: 0;
+    position: relative;
+    margin-bottom: 40px;
+    width: fit-content;
+
+}
+
+.title::after {
+    content: "";
+    width: 55%;
+    border-bottom: 4px solid #ffe266;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.huongdan_btn {
+    width: max-content;
+    height: 60px;
+    border-radius: 35px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 3px 2px 5px #888;
+}
+
+.huongdan_btn>div {
+    padding: 0 60px;
+    line-height: 60px;
+    border: none;
+    margin: 0;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.huongdan_btn>div.active {
+    background-color: #ffe266;
+    height: 60px;
+}
+
+
+.huongdan_page1 .box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.huongdan p {
+    font-size: 20px;
+    font-family: Avo;
+    margin: 0;
+}
+
+.huongdan .step {
+    font-family: Androgyne;
+    float: left;
+    width: 80px;
+    height: 50px;
+}
+
+.huongdan_page1 .qrcode{
+    height: 125px;
+    width: 125px;
+    margin: 20px 0;
+}
+
+.huongdan_page1 .download img {
+    width: 180px;
+}
+
+.anhmh {
+    width: 270px;
+    margin: 0 auto;
+}
+
+.line-box {
+    width: 20px;
+    margin-top: 10%;
+}
+
+
+.huongdan_page2 .box {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.huongdan_page2 .boxcenter {
+    flex-direction: column;
+}
+
+.huongdan_page2 .huongdan_img {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.huongdan_page2 .huongdan_img:last-child {
+    align-items: flex-start;
+}
+
+.huongdan_page2 .step {
+    height: 100px;
+} 
+
+.huongdan_page4 .boxcenter{
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+.huongdan_page4 img {
+    width: 100%;
+}
+
+.review {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner3.jpg);
+    position: relative;
+}
+
+.review::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+    left: 0;
+    top: 0;
+}
+
+.review .title {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.review .boxcenter {
+    padding: 20px 0;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.review_user_avatar {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.review_user_avatar img {
+    width: 100%;
+}
+
+.review .review_user_content {
+    background-color: #fff;
+    border-radius: 0 30px 0 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.review .review_user_content p {
+    font-size: 16px;
+    font-family: Avo;
+    font-weight: 500px;
+    padding: 0 30px;
+}
+
+.review .goc {
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -50px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.review_user_name {
+    font-size: 20px;
+    text-align: center;
+}
+
+.review .col-4 {
+    width: 30%;
+}
+
+.review .mr {
+    margin-right: 5%;
+}
+
+.dot {
+    margin-top: 50px;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.dot_icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .6;
+}
+
+.dot .active {
+    opacity: 1;
+}
+/* End of Hướng dẫn*/
+
+/* Chính sách */
+.chinhsach_content {
+    width: 100%;
+    min-height:100px;
+}
+/* End Chính sách */
