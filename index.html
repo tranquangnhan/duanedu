@@ -288,8 +288,8 @@
             <div class="huongdan_title">
                 <h2 class="title">Hướng dẫn sử dụng App</h2>
                 <div class="huongdan_btn">
-                    <div class="active">Gia sư</div>
-                    <div>Học viên</div>
+                    <div class="active" onclick="giasu()" id="btngiasu">Gia sư</div>
+                    <div onclick="hocvien()" id="btnhocvien">Học viên</div>
                 </div>
             </div>
             <div class="huongdan_page1 page">
@@ -304,67 +304,122 @@
                         </div>
                     </div>
                     <div class="box">
-                        <img src="images/screenshot/anhmh (1).svg" alt="" class="anhmh">
+                        <img src="images/screenshot/1.png" alt="" class="anhmh">
                     </div>
                 </div>
             </div>
-            <div class="huongdan_page2 page">
+            <div id="giasu">
+            <div class="huongdan_page2 page" >
                 <div class="boxcenter">
                     <div class="huongdan_img">
                         <div class="box">
-                            <img src="images/screenshot/mh (3).png" alt="">
+                            <img src="images/screenshot/giasu/2.png" alt="">
                             <p><span class="step">Bước 2:</span><span>“Đăng ký” </span>tài khoản</p>
                         </div>
                         <div class="line-box">
                             <img src="images/line.svg" alt="">
                         </div>
                         <div class="box">
-                            <img src="images/screenshot/mh (2).png" alt="">
+                            <img src="images/screenshot/giasu/3.png" alt="">
                             <p><span class="step">Bước 3:</span><span>“Khai báo thông tin” </span><br>đầy đủ</p>
                         </div>
                         <div class="line-box">
                             <img src="images/line.svg" alt="">
                         </div>
                         <div class="box">
-                            <img src="images/screenshot/mh (1).png" alt="">
+                            <img src="images/screenshot/giasu/4.png" alt="">
                             <p><span class="step">Bước 4:</span><span>"Nhận lớp phù hợp"</span><br>hoặc chấp nhận <br><span>"Lời mời trực tiếp"</span> <br> từ học viên</p>
                         </div>
                     </div>
                 </div>
                 <div class="goc"></div>
             </div>
-            <div class="huongdan_page2 page">
+            <div class="huongdan_page2 page" >
                 <div class="boxcenter">
                     <div class="huongdan_img">
                         <div class="box">
-                            <img src="images/screenshot/mh (5).png" alt="">
+                            <img src="images/screenshot/giasu/5.png" alt="">
                             <p><span class="step">Bước 5:</span><span>“Thanh toán” </span> &nbsp;&nbsp;&nbsp;&nbsp;</p>
                         </div>
                         <div class="line-box">
                             <img src="images/line.svg" alt="">
                         </div>
                         <div class="box">
-                            <img src="images/screenshot/mh (6).png" alt="">
-                            <p><span class="step">Bước 3:</span><span>“Khai báo thông tin” </span><br>đầy đủ</p>
+                            <img src="images/screenshot/giasu/6.png" alt="">
+                            <p><span class="step">Bước 6:</span>Nhận lớp thành công</p>
                         </div>
                         <div class="line-box">
                             <img src="images/line.svg" alt="">
                         </div>
                         <div class="box">
-                            <img src="images/screenshot/mh (7).png" alt="">
-                            <p><span class="step">Bước 4:</span><span>"Nhận lớp phù hợp"</span><br>hoặc chấp nhận <br><span>"Lời mời trực tiếp"</span> <br> từ học viên</p>
+                            <img src="images/screenshot/giasu/7.png" alt="">
+                            <p><span class="step">Bước 7:</span>Vào <span>"thông báo"</span><br>để liên hệ trực tiếp <br>với học viên</p>
                         </div>
                     </div>
                 </div>
                 <div class="goc"></div>
             </div>
-            <div class="huongdan_page4 page">
+            <div class="huongdan_page4 page" >
                 <div class="boxcenter">
                     <p><span class="step">Bước 8:</span>Hoàn tất - bắt đầu dạy</p>
                     <img src="images/minhhoa/dayhoc.svg" alt="">
                 </div>
                 <div class="goc"></div>
             </div>
+            </div>
+            <!-- HỌC VIÊN -->
+            <div id="hocvien">
+            <div class="huongdan_page2 page" >
+                <div class="boxcenter">
+                    <div class="huongdan_img">
+                        <div class="box">
+                            <img src="images/screenshot/giasu/2.png" alt="">
+                            <p><span class="step">Bước 2:</span><span>“Đăng ký” </span>tài khoản</p>
+                        </div>
+                        <div class="line-box">
+                            <img src="images/line.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="images/screenshot/hocvien/3.png" alt="">
+                            <p><span class="step">Bước 3:</span><span>“Khai báo thông tin” </span></p>
+                        </div>
+                        <div class="line-box">
+                            <img src="images/line.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="images/screenshot/giasu/4.png" alt="">
+                            <p><span class="step">Bước 4:</span>Gửi lời mời dạy trực tiếp <br>đến <span>"Gia sư tiêu biểu"</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goc"></div>
+            </div>
+            <div class="huongdan_page2 page" >
+                <div class="boxcenter">
+                    <div class="huongdan_img">
+                        <div class="box">
+                            <img src="images/screenshot/hocvien/5.png" alt="">
+                            <p><span class="step">Bước 5:</span>Nếu chưa tìm được <br> gia sư phù hợp ? <br>hãy <span>"Tạo yêu cầu"</span> ngay</p>
+                        </div>
+                        <div class="line-box">
+                            <img src="images/line.svg" alt="">
+                        </div>
+                        <div class="box">
+                            <img src="images/screenshot/giasu/7.png" alt="">
+                            <p><span class="step">Bước 6:</span>Vào <span>"thông báo"</span><br>để liên hệ trực tiếp với gia sư</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goc"></div>
+            </div> 
+            <div class="huongdan_page4 page" id="hocvienn">
+                <div class="boxcenter">
+                    <p><span class="step">Bước 8:</span>Hoàn tất - bắt đầu học</p>
+                    <img src="images/minhhoa/dayhoc2.svg" alt="">
+                </div>
+                <div class="goc"></div>
+            </div>
+        </div>
         </div>
     </div>    
     <div class="row">
