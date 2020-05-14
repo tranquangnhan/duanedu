@@ -62,30 +62,30 @@ chay();
 //     chuyen()
 // }
 
-// var kichthuoc = document.getElementsByClassName('slide')[0].clientWidth;
-// var chuyenSlide = document.getElementsByClassName('chuyen-slide')[0]; // lấy kích thức tất cả ảnh
-// var maxlength = document.querySelectorAll('.chuyen-slide img');
-// var max = kichthuoc * maxlength.length;
-// max -= kichthuoc;
-// var chuyen = 0;
+var kichthuoc = document.getElementsByClassName('slide')[0].clientWidth;
+var chuyenSlide = document.getElementsByClassName('chuyen-slide')[0]; // lấy kích thức tất cả ảnh
+var maxlength = document.querySelectorAll('.chuyen-slide__boximg');
+var max = kichthuoc * maxlength.length;
+max -= kichthuoc;
+var chuyen = 0;
 
-// function tiep() {
+function tiep() {
 
-//     if (chuyen < max) {
-//         chuyen += kichthuoc;
-//     } else chuyen = 0;
-//     chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
-// }
+    if (chuyen < max) {
+        chuyen += kichthuoc;
+    } else chuyen = 0;
+    chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
+}
 
-// function lui() {
-//     if (chuyen == 0) {
-//         chuyen = max;
-//     } else {
-//         chuyen -= kichthuoc;
-//     }
-//     chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
-// }
-setInterval('tiep()', 3000);
+function lui() {
+    if (chuyen == 0) {
+        chuyen = max;
+    } else {
+        chuyen -= kichthuoc;
+    }
+    chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
+}
+setInterval('tiep()', 10000);
 // start btn go to top
 window.onscroll = function() {
     scrollFunction()

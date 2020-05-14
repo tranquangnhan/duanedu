@@ -45,6 +45,10 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-family: Androgyne;
+}
+
 h2,
 h3 {
     font-family: Androgyne;
@@ -67,6 +71,18 @@ p {
     font-family: MyriadPro;
 }
 
+.pl-4 {
+    padding-left: 4rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.img2 img {
+    width: 100% !important;
+}
+
 .row {
     width: 100%;
     float: left;
@@ -83,7 +99,6 @@ p {
     left: 0;
     position: absolute;
     width: 100%;
-    height: 500px;
 }
 
 
@@ -91,22 +106,27 @@ p {
 
 .slide {
     position: relative;
-    width: 1349px;
-    /* overflow: hidden; */
+    width: 100%;
+    overflow: hidden;
     margin: 0 auto;
 }
 
 .chuyen-slide {
-    /* width: 9999px; */
-    width: 100%;
+    width: 9999px;
     transition: all 0.8s;
 }
 
-.chuyen-slide img {
+.chuyen-slide__boximg-item img {
+    width: 100%;
+    height: 855px;
+    object-fit: cover;
+}
+
+.chuyen-slide .chuyen-slide__boximg {
     width: 1349px;
     height: 855px;
     object-fit: cover;
-    /* float: left; */
+    float: left;
 }
 
 .dieuhuong {
@@ -128,16 +148,70 @@ p {
     z-index: 100;
 }
 
+
+/* =============box__welcome2=================== */
+
 .box__welcome2 {
     width: 945px;
     height: 430px;
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box__welcome2-img img {
+    width: 75%;
+    height: 100%;
+    float: left;
 }
 
 .box__welcome2-img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
+
+.box__welcome-left {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+.box__welcome-right {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+    padding-right: 20px;
+}
+
+.box__welcome-heading h2 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 25pt;
+    font-weight: 500;
+}
+
+.box__welcome2-p {
+    text-align: left;
+    width: 95%;
+}
+
+.box__welcome2-p p {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome2 h1 {
+    font-size: 60pt;
+    font-family: Androgyne;
+    line-height: 70px;
+}
+
+.welcome2 span {
+    font-size: 38pt;
+}
+
+
+/* =============box__welcome2=================== */
 
 
 /* end code slide */
@@ -195,7 +269,7 @@ p {
 .logo img {
     width: 100px;
     min-height: 100px;
-    margin-top: 30px;
+    margin: 20px 0 0 50px;
 }
 
 .navbar__rgba {
@@ -208,8 +282,8 @@ p {
 
 .menu {
     min-height: 80px;
-    /* float: left; */
-    margin-left: 700px;
+    float: right;
+    margin: 20px 50px 0 0px;
 }
 
 .menu sub {
@@ -273,7 +347,7 @@ p {
 }
 
 .text-banner2 {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     color: white;
     padding-top: 65px;
@@ -284,9 +358,10 @@ p {
     z-index: 2;
 }
 
-.text-banner h1 {
-    /* margin-left: 50px; */
-    font-size: 50pt;
+.text-banner .welcome p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .chuyen-slide__boximg {
@@ -327,12 +402,13 @@ p {
 }
 
 .welcome h1 {
-    font-size: 30pt;
-    margin-top: 15px;
+    font-size: 35pt;
+    margin: 20px 0;
+    text-align: left;
 }
 
 .rgba {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -471,15 +547,17 @@ p {
 }
 
 .btn-dk {
-    width: 180px;
+    max-width: 230px;
     height: 60px;
     border-radius: 60px;
     background-color: #ffe266;
     text-align: center;
     line-height: 60px;
-    margin: 50px 0;
-    font-size: 13pt;
+    margin: 40px 0;
+    font-size: 20pt;
     transition: all 0.5s;
+    font-family: Androgyne;
+    color: black;
 }
 
 .btn-dk:hover {
