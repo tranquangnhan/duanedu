@@ -88,6 +88,11 @@ p {
     float: left;
 }
 
+.boxcenter2 {
+    width: 93%;
+    margin: 0 auto;
+}
+
 .boxcenter {
     width: 80%;
     margin: 0 auto;
@@ -420,9 +425,9 @@ p {
 .content {
     float: left;
     background-image: url('../images/background2.png');
-    background-repeat: repeat-y;
-    min-height: 800px;
-    background-size: 1350px 700px;
+    min-height: 1300px;
+    /* background-size: 1350px 700px; */
+    background-repeat: repeat;
     position: relative;
 }
 
@@ -448,10 +453,10 @@ p {
     position: absolute;
     left: 1%;
     top: 70%;
-    width: 87% !important;
+    width: 90% !important;
     margin-left: 19px;
     border-radius: 20px;
-    box-shadow: 3px 4px 8px #999;
+    box-shadow: 8px 4px 8px #999;
     height: 390px;
     background-color: rgb(255, 255, 255, 0.3);
 }
@@ -471,6 +476,19 @@ p {
     background-color: rgba(252, 235, 0, 0.4);
 }
 
+.content__parent-about .xemthem {
+    float: right;
+    margin-top: 20px;
+}
+
+.content__parent-about .xemthem a {
+    text-decoration: none;
+    padding-right: 20px;
+    font-family: Androgyne;
+    color: black;
+    font-weight: bold;
+}
+
 .content__parent-about .content-text h3 {
     text-align: center;
     margin-bottom: 10px;
@@ -478,8 +496,16 @@ p {
 
 .content__parent-about .content-text p {
     width: 80%;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
+}
+
+.content__parent-about .content-text ul {
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .teacher {
@@ -490,6 +516,10 @@ p {
 .student img,
 .teacher img {
     padding-top: 80px;
+}
+
+.teacher .teacher__img img {
+    width: 100%;
 }
 
 .teacher h2 {
@@ -506,7 +536,7 @@ p {
 
 .text-teacher {
     padding-top: 20px;
-    width: 60%;
+    width: 90%;
     margin-left: 50px;
     color: white;
     line-height: 30px;
@@ -534,25 +564,13 @@ p {
     height: 80px;
 }
 
-.quyenloi-check {
-    margin-left: 40px;
-}
-
-.quyenloi-check div {
-    margin: 10px 0;
-}
-
-.check {
-    margin: 10px 0;
-}
-
 .btn-dk {
     max-width: 230px;
     height: 60px;
     border-radius: 60px;
     background-color: #ffe266;
     text-align: center;
-    line-height: 60px;
+    line-height: 54px;
     margin: 40px 0;
     font-size: 20pt;
     transition: all 0.5s;
@@ -758,6 +776,11 @@ p {
 
 .col-4 {
     width: 32%;
+    float: left;
+}
+
+.col-8 {
+    width: 66%;
     float: left;
 }
 
