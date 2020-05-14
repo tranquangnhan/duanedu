@@ -9,32 +9,31 @@
 
 @font-face {
     font-family: MyriadPro;
-    src:url('../font/MyriadPro.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-   }
+    src: url('../font/MyriadPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: Avo;
-    src:url('../font/SVN-Avo.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
+    src: url('../font/SVN-Avo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: AvoItalic;
-    src:url('../font/SVN-Avo italic.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-   }
+    src: url('../font/SVN-Avo italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: Androgyne;
-    src:url('../font/UTM Androgyne.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-   }
-   
+    src: url('../font/UTM Androgyne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
@@ -81,8 +80,9 @@ p {
 .boxcontentbn {
     z-index: 2;
     top: 0;
+    left: 0;
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 500px;
 }
 
@@ -92,20 +92,21 @@ p {
 .slide {
     position: relative;
     width: 1349px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
 }
 
 .chuyen-slide {
-    width: 9999px;
+    /* width: 9999px; */
+    width: 100%;
     transition: all 0.8s;
 }
 
 .chuyen-slide img {
     width: 1349px;
-    height: 600px;
+    height: 855px;
     object-fit: cover;
-    float: left;
+    /* float: left; */
 }
 
 .dieuhuong {
@@ -125,6 +126,17 @@ p {
     position: absolute;
     left: 1275px;
     z-index: 100;
+}
+
+.box__welcome2 {
+    width: 945px;
+    height: 430px;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.box__welcome2-img {
+    width: 50%;
+    height: 50%;
 }
 
 
@@ -249,16 +261,36 @@ p {
 }
 
 .text-banner {
-    width: 39%;
+    width: 50%;
     margin: 0 auto;
     color: white;
     padding-top: 65px;
     text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 24%;
+    z-index: 2;
 }
 
-.text-banner h2 {
+.text-banner2 {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 65px;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    z-index: 2;
+}
+
+.text-banner h1 {
     /* margin-left: 50px; */
-    font-size: 22pt;
+    font-size: 50pt;
+}
+
+.chuyen-slide__boximg {
+    position: relative;
 }
 
 .cms {
@@ -602,7 +634,6 @@ p {
     z-index: 2;
 }
 
-
 .map {
     width: 50%;
     float: left;
@@ -795,8 +826,6 @@ p {
     .contact .footer i {
         margin: 5px 10px 0 0;
     }
-
-
     /* menu */
     .menu {
         display: none;
@@ -1100,48 +1129,37 @@ p {
     h2.title {
         font-size: 25px;
     }
-    
-
     .step {
         width: 100% !important;
         text-align: center;
         height: unset !important;
     }
-
     .huongdan {
         text-align: center;
     }
-
     .line-box {
         display: none;
     }
-
     .huongdan_img {
         width: 80%;
         flex-direction: column;
     }
-
     .huongdan_btn>div {
         padding: 0 30px !important;
     }
-
     .huongdan .box {
         width: 100% !important;
         height: unset !important;
     }
-
     .huongdan .page .boxcenter {
         flex-direction: column;
     }
-
     .review .boxcenter {
         flex-direction: column;
     }
-
     .huongdan .page {
         min-height: unset !important;
     }
-
     .huongdan p {
         margin-bottom: 50px !important;
     }
@@ -1149,19 +1167,15 @@ p {
         width: 100% !important;
         display: none;
     }
-
     .review .col-4:first-child {
         display: block;
     }
-
     #hocvienn .boxcenter {
         flex-direction: column !important;
     }
-
     .page {
         padding: 40px 0;
     }
-
     .anhmh {
         width: 100px;
         margin-top: 30px !important;
@@ -1171,7 +1185,9 @@ p {
 
 /* Phúc Bình */
 
+
 /* Hướng dẫn*/
+
 .huongdan {
     background-image: url('../images/background2.png');
     background-repeat: repeat;
@@ -1205,7 +1221,7 @@ span {
 }
 
 .huongdan .page:nth-child(2n) .goc {
-    border-top-color: #fff ;
+    border-top-color: #fff;
 }
 
 .huongdan .page .boxcenter {
@@ -1229,7 +1245,6 @@ h2.title {
     position: relative;
     margin-bottom: 40px;
     width: fit-content;
-
 }
 
 #hocvien {
@@ -1270,7 +1285,6 @@ h2.title {
     height: 60px;
 }
 
-
 .huongdan_page1 .box {
     width: 50%;
     display: flex;
@@ -1282,7 +1296,6 @@ h2.title {
 .huongdan .box img {
     width: 200px;
 }
-
 
 .huongdan p {
     font-size: 20px;
@@ -1297,7 +1310,7 @@ h2.title {
     height: 50px;
 }
 
-.huongdan_page1 .qrcode{
+.huongdan_page1 .qrcode {
     height: 125px;
     width: 125px !important;
     margin: 20px 0;
@@ -1316,7 +1329,6 @@ h2.title {
     width: 20px;
     margin-top: 10%;
 }
-
 
 .huongdan_page2 .box {
     width: fit-content;
@@ -1342,9 +1354,9 @@ h2.title {
 
 .huongdan_page2 .step {
     height: 100px;
-} 
+}
 
-.huongdan_page4 .boxcenter{
+.huongdan_page4 .boxcenter {
     padding: 50px 0;
     flex-direction: column;
 }
@@ -1358,7 +1370,7 @@ h2.title {
     justify-content: space-between;
 }
 
-#hocvienn .boxcenter img{
+#hocvienn .boxcenter img {
     flex-basis: 50%;
 }
 
@@ -1462,11 +1474,17 @@ h2.title {
 .dot .active {
     opacity: 1;
 }
+
+
 /* End of Hướng dẫn*/
 
+
 /* Chính sách */
+
 .chinhsach_content {
     width: 100%;
-    min-height:100px;
+    min-height: 100px;
 }
+
+
 /* End Chính sách */
