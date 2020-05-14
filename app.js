@@ -64,7 +64,7 @@ chay();
 
 var kichthuoc = document.getElementsByClassName('slide')[0].clientWidth;
 var chuyenSlide = document.getElementsByClassName('chuyen-slide')[0]; // lấy kích thức tất cả ảnh
-var maxlength = document.querySelectorAll('.chuyen-slide img');
+var maxlength = document.querySelectorAll('.chuyen-slide__boximg');
 var max = kichthuoc * maxlength.length;
 max -= kichthuoc;
 var chuyen = 0;
@@ -85,7 +85,7 @@ function lui() {
     }
     chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
 }
-setInterval('tiep()', 3000);
+setInterval('tiep()', 10000);
 // start btn go to top
 window.onscroll = function() {
     scrollFunction()
@@ -154,4 +154,3 @@ function hocvien() {
     btnhocvien.classList.add('active');
     btngiasu.classList.remove('active');
 }
-
