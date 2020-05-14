@@ -1049,11 +1049,8 @@ p {
         width: 100px;
         margin-top: 30px !important;
     }
-
-    .swiper-slide {
-        width: 48% !important; 
-    }
 }
+
 
 /* mobile */
 
@@ -1367,11 +1364,7 @@ p {
     .swiper-slide, .swiper-slide-active {
         width: 100% !important; 
     /* End slide */
-    }
-
-    .review {
-        height: 550px !important;
-    }
+}
 }
 
 
@@ -1571,7 +1564,7 @@ h2.title {
     background-repeat: no-repeat;
     background-image: url(../images/banner6.bmp);
     position: relative;
-    height: 700px;
+    min-height: 700px;
     display: flex;
 }
 
