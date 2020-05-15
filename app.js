@@ -164,7 +164,6 @@ function giasu_qa() {
     boxgiasuqa.style.display = "block";
     btnhocvienqa.classList.remove('active');
     btngiasuqa.classList.add('active');    
-    alert('xong gs');
 }
 
 function hocvien_qa() {
@@ -172,5 +171,4 @@ function hocvien_qa() {
     boxhocvienqa.style.display = "block";
     btnhocvienqa.classList.add('active');
     btngiasuqa.classList.remove('active');
-    alert('xong hv');
 }
