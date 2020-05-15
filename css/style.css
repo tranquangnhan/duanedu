@@ -288,7 +288,7 @@ p {
 .menu {
     min-height: 80px;
     float: right;
-    margin: 20px 50px 0 0px;
+    margin: 20px 80px 0 0px;
 }
 
 .menu sub {
@@ -314,6 +314,7 @@ p {
     color: white;
     text-decoration: none;
     margin: 0px 20px;
+    font-size: 16pt;
 }
 
 .menu ul li ul {
@@ -523,7 +524,7 @@ p {
 }
 
 .student .student__img img {
-    width: 60%;
+    width: 55%;
 }
 
 .teacher h2 {
@@ -533,12 +534,13 @@ p {
 }
 
 .gach {
-    width: 70%;
+    width: 50%;
     margin: 5px 0 50px 2px;
     border-bottom: 3px solid #ffe266;
 }
 
 .text-teacher {
+    margin-top: 3rem;
     padding-top: 20px;
     width: 90%;
     margin-left: 50px;
@@ -548,6 +550,7 @@ p {
 
 .text-teacher h2 {
     line-height: 50px;
+    margin-bottom: 5px;
 }
 
 .quyenloi-check {
@@ -1747,10 +1750,11 @@ h2.title {
 
 .chinhsach .title {
     margin: 60px auto;
-<<<<<<< HEAD
 }
 
+
 /* Ưu điểm  */
+
 .uudiem__box {
     height: 500px;
     background-image: url(../images/background2.png);
@@ -1776,6 +1780,3 @@ h2.title {
 .uudiem__box .swiper-pagination-bullet-active {
     background-color: #000 !important;
 }
-=======
-}
->>>>>>> f064db231648af21a0849fa9ad974850597cce2b
