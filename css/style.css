@@ -426,8 +426,7 @@ p {
 .content {
     float: left;
     background-image: url('../images/background2.png');
-    min-height: 1000px;
-    /* background-size: 1350px 700px; */
+    min-height: 1150px;
     background-repeat: repeat;
     position: relative;
 }
@@ -437,9 +436,9 @@ p {
 }
 
 .content .abu {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .content img {
@@ -681,18 +680,32 @@ p {
     margin-right: 20px;
 }
 
-.boxtext-faq {
-    width: 80%;
-    height: 130px;
-    border-radius: 10px;
-    margin-left: 80px;
-    background-color: #f2f2f2;
+.faq__title {
+    display: flex;
+    align-items: center;
+    height: fit-content;
 }
 
-.boxtext-faq p {
+.boxtext-faq {
     width: 90%;
-    padding: 30px 20px 0 20px;
-    font-size: 11pt;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.boxtext-faq .goc {
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #f2f2f2;
+    top: -50px;
+    left: 10%;
+}
+
+.faq .huongdan_btn {
+    margin-bottom: 40px;
 }
 
 .uudai {
@@ -733,11 +746,6 @@ p {
     left: 0;
     top: 0;
     position: absolute;
-}
-
-.text-faq i,
-p {
-    padding: 10px 0;
 }
 
 .uudai-content {
@@ -861,7 +869,7 @@ p {
 
 .faq {
     background-image: url('../images/background2.png');
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     min-height: 600px;
     background-size: 1350px 1000px;
     min-height: 600px;
@@ -1464,14 +1472,13 @@ h2.title {
     position: relative;
     margin-bottom: 40px;
     width: fit-content;
-    margin: 0 auto 40px;
     text-align: center;
 }
 
 .title::after {
     content: "";
-    width: 55%;
-    border-bottom: 4px solid #ffe266;
+    width: 60%;
+    border-bottom: 3px solid #ffe266;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -1484,6 +1491,7 @@ h2.title {
 .huongdan_btn {
     width: max-content;
     height: 60px;
+    margin: 0 auto;
     border-radius: 35px;
     background-color: #fff;
     overflow: hidden;
@@ -1779,4 +1787,14 @@ h2.title {
 
 .uudiem__box .swiper-pagination-bullet-active {
     background-color: #000 !important;
+}
+
+#about,
+.faq .title {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#qa_hocvien {
+    display: none;
 }

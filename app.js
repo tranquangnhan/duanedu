@@ -140,6 +140,10 @@ var boxgiasu = document.getElementById('giasu');
 var boxhocvien = document.getElementById('hocvien');
 var btngiasu = document.getElementById('btngiasu');
 var btnhocvien = document.getElementById('btnhocvien')
+var boxgiasuqa = document.getElementById('qa_giasu');
+var boxhocvienqa = document.getElementById('qa_hocvien');
+var btngiasuqa = document.getElementById('btngiasuqa');
+var btnhocvienqa = document.getElementById('btnhocvienqa');
 
 function giasu() {
     boxhocvien.style.display = "none";
@@ -153,4 +157,20 @@ function hocvien() {
     boxhocvien.style.display = "block";
     btnhocvien.classList.add('active');
     btngiasu.classList.remove('active');
+}
+
+function giasu_qa() {
+    boxhocvienqa.style.display = "none";
+    boxgiasuqa.style.display = "block";
+    btnhocvienqa.classList.remove('active');
+    btngiasuqa.classList.add('active');    
+    alert('xong gs');
+}
+
+function hocvien_qa() {
+    boxgiasuqa.style.display = "none";
+    boxhocvienqa.style.display = "block";
+    btnhocvienqa.classList.add('active');
+    btngiasuqa.classList.remove('active');
+    alert('xong hv');
 }
