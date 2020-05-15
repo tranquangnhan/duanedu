@@ -140,8 +140,8 @@ var boxgiasu = document.getElementById('giasu');
 var boxhocvien = document.getElementById('hocvien');
 var btngiasu = document.getElementById('btngiasu');
 var btnhocvien = document.getElementById('btnhocvien')
-var boxgiasuqa = document.getElementById('q&a_giasu');
-var boxhocvienqa = document.getElementById('q&a_hocvien');
+var boxgiasuqa = document.getElementById('qa_giasu');
+var boxhocvienqa = document.getElementById('qa_hocvien');
 var btngiasuqa = document.getElementById('btngiasuqa');
 var btnhocvienqa = document.getElementById('btnhocvienqa');
 

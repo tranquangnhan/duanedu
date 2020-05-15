@@ -866,7 +866,7 @@ p {
 
 .faq {
     background-image: url('../images/background2.png');
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     min-height: 600px;
     background-size: 1350px 1000px;
     min-height: 600px;
@@ -1787,4 +1787,8 @@ h2.title {
 #about, .faq .title {
     margin: auto;
     margin-bottom: 40px;
+}
+
+#qa_hocvien {
+    display: none;
 }
