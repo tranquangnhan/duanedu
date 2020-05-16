@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: Androgyne;
-    src: url('../font/UTM Androgyne.ttf') format('truetype');
+    src: url('../font/UTM-Androgyne.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -1017,9 +1017,9 @@ p {
     }
     #navmb__off {
         display: none;
-        float: left;
+        float: right;
         font-weight: bold;
-        margin: 0px 10px;
+        margin: 0px 25px;
         font-size: 16pt;
     }
     .navbar__icon {
@@ -1112,6 +1112,7 @@ p {
         width: 100% !important;
         height: unset !important;
     }
+
     .huongdan .page .boxcenter {
         flex-direction: column;
     }
@@ -1156,9 +1157,9 @@ p {
     }
     #navmb__off {
         display: none;
-        float: left;
+        float: right;
         font-weight: bold;
-        margin: 0px 0px;
+        margin-right: 25px;
         font-size: 16pt;
     }
     .navbar__icon {
@@ -1249,6 +1250,7 @@ p {
     .text-banner .welcome .welcome__p-mobile {
         display: block;
     }
+
     .logo img {
         width: 70px;
         min-height: 50px;
@@ -1385,6 +1387,11 @@ p {
     .contact .footer-logo {
         width: 30%;
     }
+
+    .contact .footer-logo img {
+       margin: auto;
+    }
+
     .contact .footer .text-footer {
         width: 90%;
         text-align: center;
@@ -1641,6 +1648,10 @@ h2.title {
     flex-direction: column;
 }
 
+.huongdan_page2 .box img {
+    margin-bottom: 10px;
+}
+
 .huongdan_page2 .boxcenter {
     flex-direction: column;
 }
@@ -1657,7 +1668,7 @@ h2.title {
 }
 
 .huongdan_page2 .step {
-    height: 100px;
+    height: 140px;
 }
 
 .huongdan_page4 .boxcenter {
