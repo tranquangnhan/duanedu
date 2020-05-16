@@ -157,8 +157,8 @@ p {
 /* =============box__welcome2=================== */
 
 .box__welcome2 {
-    width: 945px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1112,7 +1112,6 @@ p {
         width: 100% !important;
         height: unset !important;
     }
-
     .huongdan .page .boxcenter {
         flex-direction: column;
     }
@@ -1239,18 +1238,31 @@ p {
         display: none;
     }
     .text-banner {
-        width: 100%;
+        width: 95%;
+        display: block;
+        left: 3%;
+    }
+    .text-banner2 {
+        width: 95%;
+        display: block;
+        left: 3%;
     }
     .text-banner .welcome h1 {
-        width: 100%;
+        font-size: 20pt;
     }
-    .text-banner .welcome p {
-        display: none;
+    .text-banner2 .welcome2 h1 {
+        font-size: 20pt;
     }
     .text-banner .welcome .welcome__p-mobile {
-        display: block;
+        display: none
     }
-
+    .box__welcome2 .box__welcome-left,
+    .box__welcome2 .box__welcome-right {
+        width: 100%;
+    }
+    .box__welcome2 .box__welcome-left img {
+        display: none;
+    }
     .logo img {
         width: 70px;
         min-height: 50px;
@@ -1387,11 +1399,9 @@ p {
     .contact .footer-logo {
         width: 30%;
     }
-
     .contact .footer-logo img {
-       margin: auto;
+        margin: auto;
     }
-
     .contact .footer .text-footer {
         width: 90%;
         text-align: center;

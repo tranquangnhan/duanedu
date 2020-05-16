@@ -1,9 +1,10 @@
 var kichthuoc = document.getElementsByClassName('slide')[0].clientWidth;
 var chuyenSlide = document.getElementsByClassName('chuyen-slide')[0]; // lấy kích thức tất cả ảnh
-var maxlength = document.querySelectorAll('.chuyen-slide__boximg');
+var maxlength = document.querySelectorAll('.chuyen-slide__boximg'); //tìm kích thước lớn nhất
 var max = kichthuoc * maxlength.length;
 max -= kichthuoc;
 var chuyen = 0;
+console.log(kichthuoc);
 
 function tiep() {
 
@@ -22,6 +23,16 @@ function lui() {
     chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
 }
 setInterval('tiep()', 10000);
+
+
+if (kichthuoc < 769) {
+    var respon = document.querySelector('.chuyen-slide__boximg');
+    var respon2 = document.querySelector('.text-banner2');
+    respon.style.width = kichthuoc + 'px';
+    respon2.style.width = kichthuoc + 'px';
+}
+
+
 // start btn go to top
 window.onscroll = function() {
     scrollFunction()
