@@ -4,7 +4,7 @@ var maxlength = document.querySelectorAll('.chuyen-slide__boximg'); //tìm kích
 var max = kichthuoc * maxlength.length;
 max -= kichthuoc;
 var chuyen = 0;
-console.log(kichthuoc);
+console.log(max);
 
 function tiep() {
 
@@ -22,7 +22,7 @@ function lui() {
     }
     chuyenSlide.style.marginLeft = '-' + chuyen + 'px';
 }
-setInterval('tiep()', 10000);
+setInterval('tiep()', 3000);
 
 
 if (kichthuoc < 769) {

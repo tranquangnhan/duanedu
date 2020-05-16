@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: MyriadPro;
     src: url('../font/MyriadPro.ttf') format('truetype');
@@ -1214,6 +1213,7 @@ p {
         }
     }
     /* end menu */
+    /* start banner */
     .boxbanner {
         min-height: 500px;
     }
@@ -1226,12 +1226,6 @@ p {
     .dieuhuong {
         display: none;
     }
-    .text-banner .icons-banner {
-        display: none;
-    }
-    .text-banner .cms {
-        display: none;
-    }
     .text-banner {
         width: 95%;
         display: block;
@@ -1240,7 +1234,7 @@ p {
     .text-banner2 {
         width: 95%;
         display: block;
-        left: 3%;
+        left: 0%;
     }
     .text-banner .welcome h1 {
         font-size: 20pt;
@@ -1253,11 +1247,12 @@ p {
     }
     .box__welcome2 .box__welcome-left,
     .box__welcome2 .box__welcome-right {
-        width: 100%;
+        width: 95%;
     }
     .box__welcome2 .box__welcome-left img {
         display: none;
     }
+    /* end banner */
     .logo img {
         width: 70px;
         min-height: 50px;
