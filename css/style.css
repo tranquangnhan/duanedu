@@ -341,7 +341,7 @@ p {
     background-color: #ffe267;
 }
 
-.menu ul li ul li a:hover {
+.menu ul li ul li:hover a {
     color: black;
 }
 
@@ -727,28 +727,44 @@ p {
 }
 
 .uudai {
-    background-image: url('../images/background2.png');
+    background-image: url('../images/giaovien-bg.png');
     text-align: center;
     min-height: 400px;
     background-attachment: fixed;
     background-size: 1350px 800px;
     background-repeat: no-repeat;
     position: relative;
+    text-align: center;
 }
 
+.uudai .uudai-content h2 {
+    color: #ffe266;
+    margin: 20px auto;
+}
+
+.uudai .uudai-content h3,
 .uudai .uudai-content p {
-    font-weight: bold;
-    font-size: 23pt;
-}
-
-.hand {
-    padding: 10px 0;
     color: white;
 }
 
-.uudai h2 {
-    color: red;
-    padding-top: 40px;
+.uudai .uudai-content p {
+    font-style: italic;
+    font-size: 17pt;
+}
+
+.uudai__boxbtn {
+    width: 29%;
+    margin: 0 auto;
+}
+
+.uudai__boxbtn .btn-dk {
+    float: left;
+    margin-right: 4%;
+}
+
+.uudai__boxbtn .btn-dk a {
+    padding: 10px 20px;
+    color: black
 }
 
 .bg-g {
@@ -931,6 +947,7 @@ p {
     }
     .text-banner {
         width: 70%;
+        margin-left: 0;
     }
     .content__parent-about .content-shadow {
         display: none;
@@ -940,6 +957,9 @@ p {
     }
     .mb-0 {
         margin-bottom: 0;
+    }
+    .col-sm-6 {
+        width: 49%;
     }
     /* teacher and student */
     .teacher .text-teacher h2,
@@ -951,12 +971,8 @@ p {
     }
     .teacher,
     .student {
-        min-height: 620px;
+        min-height: 700px;
         flex-direction: column;
-    }
-    .teacher .quyenloi,
-    .student .quyenloi {
-        display: none;
     }
     .teacher .teacher__img img,
     .student .student__img img {
@@ -969,6 +985,9 @@ p {
     /* Ưu đãi */
     .uudai {
         min-height: 470px;
+    }
+    .uudai .uudai__boxbtn {
+        width: 51%;
     }
     .contact .footer {
         height: 700px;
@@ -993,13 +1012,14 @@ p {
         display: none;
         float: right;
         font-weight: bold;
-        margin: 0px 10px;
+        margin: 0px 25px;
         font-size: 16pt;
     }
     .navbar__icon {
-        float: left;
-        margin: 20px 25px;
+        float: right;
+        margin: 17px 20px;
         z-index: 4;
+        right: 0;
         position: fixed;
         color: black;
         cursor: pointer;
@@ -1011,12 +1031,12 @@ p {
         display: block;
         width: 57%;
         background-color: white;
-        height: 1000px;
+        height: 10000px;
         position: fixed;
         z-index: 5;
         top: 0;
-        left: 0;
-        transform: translateX(-100%);
+        right: 0;
+        transform: translateX(100%);
         transition: all 0.5s;
     }
     .navbar__mobile ul {
@@ -1024,7 +1044,7 @@ p {
         padding-top: 10px;
     }
     .navbar__mobile ul li {
-        margin: 20px 0;
+        margin: 30px 0;
     }
     .navbar__mobile ul li a {
         color: black;
@@ -1038,7 +1058,7 @@ p {
         height: 100%;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         bottom: 0;
         z-index: 3;
         display: none;
@@ -1054,7 +1074,7 @@ p {
     }
     /* end menu */
     .boxtext-faq {
-        height: 200px;
+        min-height: 150px;
     }
     /* Phúc Bình tablet */
     h2.title {
@@ -1085,6 +1105,7 @@ p {
         width: 100% !important;
         height: unset !important;
     }
+
     .huongdan .page .boxcenter {
         flex-direction: column;
     }
@@ -1131,13 +1152,14 @@ p {
         display: none;
         float: right;
         font-weight: bold;
-        margin: 0px 10px;
+        margin-right: 25px;
         font-size: 16pt;
     }
     .navbar__icon {
-        float: left;
+        float: right;
         margin: 17px 20px;
         z-index: 4;
+        right: 0;
         position: fixed;
         color: black;
         cursor: pointer;
@@ -1153,16 +1175,16 @@ p {
         position: fixed;
         z-index: 5;
         top: 0;
-        left: 0;
-        transform: translateX(-100%);
+        right: 0;
+        transform: translateX(100%);
         transition: all 0.5s;
     }
     .navbar__mobile ul {
         list-style: none;
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .navbar__mobile ul li {
-        margin: 20px 0;
+        margin: 30px 0;
     }
     .navbar__mobile ul li a {
         color: black;
@@ -1232,21 +1254,27 @@ p {
         text-align: center;
     }
     .col-4,
-    .col-6 {
+    .col-5,
+    .col-7,
+    .col-6,
+    .col-8 {
         width: 100%;
+    }
+    .boxcenter2 {
+        width: 80%;
     }
     .content {
         min-height: 250px;
     }
     .content .content__parent-about {
-        display: none;
+        /* display: none; */
     }
     .content__parent-about .content-shadow {
-        display: none;
+        /* display: none; */
     }
     .teacher,
     .student {
-        min-height: 920px;
+        min-height: 1250px;
         flex-direction: column;
     }
     .student {
@@ -1254,9 +1282,9 @@ p {
     }
     .teacher .text-teacher,
     .student .text-teacher {
-        width: 80%;
-        margin-left: 30px;
-        text-align: center;
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
     }
     .teacher .text-teacher h2,
     .student .text-teacher h2 {
@@ -1269,9 +1297,9 @@ p {
     .student .text-teacher .gach {
         margin: 0 auto;
     }
-    .teacher .quyenloi,
-    .student .quyenloi {
-        display: none;
+    .teacher .quyenloi .quyenloi-check,
+    .student .quyenloi .quyenloi-check {
+        margin: 0;
     }
     .teacher .teacher__img,
     .student .student__img {
@@ -1279,7 +1307,7 @@ p {
     }
     .teacher .teacher__img img,
     .student .student__img img {
-        width: 65%;
+        width: 90%;
         margin: 0 auto;
         display: block;
         padding-top: 30px;
@@ -1290,7 +1318,7 @@ p {
     }
     .teacher .btn-dk,
     .student .btn-dk {
-        margin: 0 auto;
+        margin: 50px auto;
     }
     .student__content {
         display: flex;
@@ -1299,6 +1327,15 @@ p {
     .class .col-4 {
         width: 32%;
     }
+    /* start- icon blue */
+    .icon-blue i {
+        font-size: 30pt;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 6px;
+    }
+    /* end- icon blue */
+    /* start-faq */
     .faq__text-item {
         margin: 0 auto;
         width: 85%;
@@ -1307,12 +1344,22 @@ p {
         width: 100%;
         font-size: 11pt;
     }
-    .faq__text-item .boxtext-faq {
-        /* flex-direction: row; */
-        display: none;
+    .faq__text-item {
+        width: 100%;
     }
     .faq__text-item .fa-comments {
         font-size: 18px !important;
+    }
+    /* end-faq */
+    /* box ưu đãi */
+    .uudai {
+        min-height: 520px;
+    }
+    .uudai .uudai__boxbtn {
+        width: 54%;
+    }
+    .uudai .uudai__boxbtn .btn-dk {
+        margin: 10px auto;
     }
     .uudai .uudai-content h2 {
         padding-top: 10px;
@@ -1320,6 +1367,7 @@ p {
     .uudai .uudai-content p {
         font-size: 18pt;
     }
+    /* box ưu đãi */
     /* footer */
     .contact .footer {
         width: 100%;
@@ -1588,6 +1636,10 @@ h2.title {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.huongdan_page2 .box img {
+    margin-bottom: 10px;
 }
 
 .huongdan_page2 .boxcenter {
