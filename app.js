@@ -1,67 +1,3 @@
-var lop = 0;
-
-function chay() {
-    lop++;
-
-    if (lop == 1251) {
-        lop = '1250';
-    }
-
-
-    document.getElementById('lop').innerHTML = lop;
-}
-
-setInterval("chay()", 0);
-chay();
-
-//baner
-// var banner = [];
-
-// banner[0] = 'url(images/banner.png)';
-// banner[1] = 'url(images/banner2.jpg)';
-// banner[2] = 'url(images/banner3.jpg)';
-// banner[3] = 'url(images/banner4.jpg)';
-// var bn = document.getElementById('boxbanner');
-// var i = 0;
-
-// function setbanner() {
-//     bn.style.background = banner[i];
-//     i++;
-//     if (i > banner.length - 1) {
-//         i = 0;
-//     }
-//     setTimeout('setbanner()', 5000);
-//     chuyen();
-// }
-// setbanner();
-
-// function chuyen() {
-//     bn.classList.add('hieuung');
-//     setTimeout(() => {
-//         bn.classList.remove('hieuung');
-//     }, 1000);
-// }
-// var j = 0;
-
-// function lui() {
-//     j--;
-//     if (j < 0) {
-//         j = banner.length - 1;
-//     }
-//     bn.style.background = banner[j];
-//     chuyen()
-// }
-// var z = 0;
-
-// function tiep() {
-//     z++;
-//     if (z > banner.length - 1) {
-//         z = 0;
-//     }
-//     bn.style.background = banner[z];
-//     chuyen()
-// }
-
 var kichthuoc = document.getElementsByClassName('slide')[0].clientWidth;
 var chuyenSlide = document.getElementsByClassName('chuyen-slide')[0]; // lấy kích thức tất cả ảnh
 var maxlength = document.querySelectorAll('.chuyen-slide__boximg');
@@ -116,7 +52,7 @@ nboff.addEventListener('click', offnav);
 // navbaric.addEventListener('click', shownavic);
 
 function shownav() {
-    if (navbarmb.style.transform = "translateX(-100%)") {
+    if (navbarmb.style.transform = "translateX(100%)") {
         navbarmb.style.transform = "translateX(0%)";
         navbarrg.style.display = "block";
         navbaric.style.float = "right";
@@ -125,12 +61,12 @@ function shownav() {
 }
 
 function hidenav() {
-    navbarmb.style.transform = "translateX(-100%)";
+    navbarmb.style.transform = "translateX(100%)";
     navbarrg.style.display = "none";
 }
 
 function offnav() {
-    navbarmb.style.transform = "translateX(-100%)";
+    navbarmb.style.transform = "translateX(100%)";
     navbarrg.style.display = "none";
 }
 // navbar
@@ -163,7 +99,7 @@ function giasu_qa() {
     boxhocvienqa.style.display = "none";
     boxgiasuqa.style.display = "block";
     btnhocvienqa.classList.remove('active');
-    btngiasuqa.classList.add('active');    
+    btngiasuqa.classList.add('active');
 }
 
 function hocvien_qa() {
