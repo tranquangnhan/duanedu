@@ -317,7 +317,7 @@ p {
     min-height: 240px;
     padding: 10px 0px;
     display: none;
-    width: 210px;
+    width: 220px;
     transition: 0.2s;
 }
 
@@ -435,9 +435,10 @@ p {
 .content {
     float: left;
     background-image: url('../images/background2.png');
-    min-height: 1150px;
+    min-height: 1100px;
     background-repeat: repeat;
     position: relative;
+    transition: 0.5s;
 }
 
 .content h2 {
@@ -467,9 +468,11 @@ p {
     margin-left: 19px;
     border-radius: 20px;
     box-shadow: 0px 6px 8px #999;
-    height: 390px;
+    height: 350px;
     background-color: rgb(255, 255, 255, 0.3);
     display: block;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .icon {
@@ -490,14 +493,24 @@ p {
 .content__parent-about .xemthem {
     float: right;
     margin-top: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
-.content__parent-about .xemthem a {
-    text-decoration: none;
+.content__parent-about .xemthem {
     padding-right: 20px;
     font-family: Androgyne;
     color: black;
     font-weight: bold;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.content__parent-about .content-text {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
 }
 
 .content__parent-about .content-text h3 {
@@ -517,6 +530,10 @@ p {
     margin: 0 auto;
     padding-top: 10px;
     margin-bottom: 20px;
+}
+
+#cttext p {
+    margin: 0;
 }
 
 .teacher {
@@ -573,6 +590,17 @@ p {
 
 .quyenloi-check span i {
     font-weight: 600;
+    cursor: pointer;
+}
+
+.quyenloi-xemthem {
+    display: none;
+    margin-left: 20px;
+    padding: 10px 5px
+}
+
+.quyenloi-xemthem i {
+    margin-right: 10px;
 }
 
 .cl-w a {
@@ -733,6 +761,7 @@ p {
 .uudai .uudai-content h2 {
     color: #ffe266;
     margin: 20px auto;
+    font-size: 32pt;
 }
 
 .uudai .uudai-content h3,
@@ -758,6 +787,10 @@ p {
 .uudai__boxbtn .btn-dk a {
     padding: 10px 20px;
     color: black
+}
+
+.btn-pd {
+    padding: 5px 13px !important;
 }
 
 .bg-g {
@@ -945,6 +978,9 @@ p {
         width: 70%;
         margin-left: 0;
     }
+    .content {
+        min-height: 1860px;
+    }
     .content__parent-about .content-text ul {
         margin-bottom: 10px;
     }
@@ -1006,9 +1042,6 @@ p {
     .menu {
         display: none;
     }
-    .navbar__icon {
-        display: block;
-    }
     #navmb__off {
         display: none;
         float: right;
@@ -1017,6 +1050,7 @@ p {
         font-size: 16pt;
     }
     .navbar__icon {
+        display: block;
         float: right;
         margin: 17px 20px;
         z-index: 4;
@@ -1024,6 +1058,7 @@ p {
         position: fixed;
         color: black;
         cursor: pointer;
+        z-index: 6;
     }
     .navbar__icon i {
         font-size: 40px;
@@ -1145,9 +1180,6 @@ p {
     .menu {
         display: none;
     }
-    .navbar__icon {
-        display: block;
-    }
     #navmb__off {
         display: none;
         float: right;
@@ -1156,6 +1188,7 @@ p {
         font-size: 16pt;
     }
     .navbar__icon {
+        display: block;
         float: right;
         margin: 17px 20px;
         z-index: 4;
@@ -1163,6 +1196,7 @@ p {
         position: fixed;
         color: black;
         cursor: pointer;
+        z-index: 6;
     }
     .navbar__icon i {
         font-size: 32px;
@@ -1173,7 +1207,7 @@ p {
         background-color: white;
         height: 1000px;
         position: fixed;
-        z-index: 5;
+        z-index: 6;
         top: 0;
         right: 0;
         transform: translateX(100%);
@@ -1273,16 +1307,17 @@ p {
         width: 80%;
     }
     .content {
-        min-height: 250px;
+        min-height: 3325px;
     }
     .content__parent-about .content-parent {
-        min-height: 650px;
+        min-height: 700px;
     }
     .content .content__parent-about .content-parent {
         /* display: none; */
     }
     .content__parent-about .content-shadow {
         display: block;
+        margin-left: 12px;
     }
     .teacher,
     .student {
@@ -1520,7 +1555,7 @@ span {
     min-height: 670px;
     font-size: 20px;
     position: relative;
-    z-index: 99;
+    z-index: 5;
     display: flex;
 }
 

@@ -4,7 +4,6 @@ var maxlength = document.querySelectorAll('.chuyen-slide__boximg'); //tìm kích
 var max = kichthuoc * maxlength.length;
 max -= kichthuoc;
 var chuyen = 0;
-console.log(max);
 
 function tiep() {
 
@@ -81,6 +80,88 @@ function offnav() {
     navbarrg.style.display = "none";
 }
 // navbar
+
+// code slideTogger
+var body = document.querySelector('body');
+var btnxemthem1 = document.querySelectorAll('.btnxemthem1');
+var boxsd1 = document.querySelectorAll('.box-sd1');
+var contenttext1 = document.querySelectorAll('.cttext1');
+for (let i = 0; i < btnxemthem1.length; i++) {
+    btnxemthem1[i].addEventListener('click', slidedown1);
+
+    function slidedown1() {
+        if (boxsd1[i].clientHeight === 350 || contentshawdown.clientHeight === 420) {
+            boxsd1[i].style.height = '500px';
+            contenttext1[i].style.height = '100%';
+            if (body.clientWidth < 740) {
+                boxsd1.style.height = '900px';
+            }
+            //điện thoại
+            if (body.clientWidth > 740 && body.clientWidth < 1024) {
+                boxsd1[i].style.height = '650px';
+            }
+            //ipad
+        } else {
+            boxsd1[i].style.height = '350px';
+            contenttext1[i].style.height = '230px';
+        }
+    }
+}
+
+//boxshadow 2
+
+var btnxemthem2 = document.querySelector('#xemthem2');
+var contentshawdown = document.querySelector('#boxxt');
+var contenttext = document.querySelector('#cttext');
+var content = document.querySelector('.content');
+btnxemthem2.addEventListener('click', slidedown);
+
+
+function slidedown() {
+    if (contentshawdown.clientHeight === 350 || contentshawdown.clientHeight === 420) {
+        contentshawdown.style.height = '700px';
+        if (body.clientWidth < 740) {
+            contentshawdown.style.height = '900px';
+        }
+        //điện thoại
+        if (body.clientWidth > 740 && body.clientWidth < 1024) {
+            contentshawdown.style.height = '1150px';
+
+        }
+        //ipad
+        contenttext.style.height = '100%';
+        if (body.clientWidth >= 900) {
+            content.style.minHeight = '1400px';
+        }
+    } else {
+        contentshawdown.style.height = '350px';
+        contenttext.style.height = '230px';
+    }
+}
+// box quyền lợi
+var iconbtn = document.querySelectorAll('.fa-angle-right');
+for (let i = 0; i < iconbtn.length; i++) {
+    iconbtn[i].addEventListener('click', boxshow);
+
+    function boxshow() {
+        var quyenloixemthem = document.querySelectorAll('.quyenloi-xemthem');
+        if (quyenloixemthem[i].style.display == 'block') {
+            quyenloixemthem[i].style.display = 'none';
+        } else {
+            quyenloixemthem[i].style.display = 'block';
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 // Phúc Bình JS
 var boxgiasu = document.getElementById('giasu');
