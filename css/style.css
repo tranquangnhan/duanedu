@@ -1420,7 +1420,7 @@ p {
     .contact .footer {
         width: 100%;
         margin: 0 auto;
-        padding-left: 20px;
+        padding: 20px;
     }
     .contact .footer-logo {
         width: 30%;
@@ -1429,7 +1429,7 @@ p {
         margin: auto;
     }
     .contact .footer .text-footer {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
     .contact .footer h3 {
@@ -1953,6 +1953,6 @@ h2.title {
     margin-right: 30px;
 }
 
-.contact {
-    height: fit-content;
+.contact .row {
+    background-color: #f7f7f7;
 }
