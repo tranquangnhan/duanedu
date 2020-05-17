@@ -712,7 +712,7 @@ p {
     border-top: 30px solid transparent;
     border-bottom: 30px solid #f2f2f2;
     top: -50px;
-    left: 10%;
+    left: 15%;
 }
 
 .faq .huongdan_btn {
@@ -810,6 +810,7 @@ p {
 .footer-logo {
     margin: 0 auto;
     width: 50%;
+    text-align: center;
 }
 
 .footer i {
@@ -818,7 +819,7 @@ p {
 }
 
 .text-footer {
-    width: 70%;
+    width: 95%;
 }
 
 .foot-end {
@@ -1132,9 +1133,9 @@ p {
         width: 100px;
         margin-top: 30px !important;
     }
-    .swiper-slide {
+    /* .swiper-slide {
         width: 48% !important;
-    }
+    } */
 }
 
 
@@ -1451,12 +1452,16 @@ p {
     .review .boxcenter {
         width: 90%;
     }
-    .swiper-container {
+    .swiper-container-mobile {
         width: 100vh;
         height: 100%;
+        overflow: hidden;
+        display: block;
     }
+    
     .swiper-slide {
         cursor: pointer;
+        width: 100%;
         text-align: center;
         font-size: 18px;
         height: max-content !important;
@@ -1474,6 +1479,12 @@ p {
         -webkit-align-items: center;
         align-items: center;
     }
+
+    .swiper-container {
+        display: none;
+    }
+
+    /*
     .swiper-pagination-bullet {
         width: 18px !important;
         height: 18px !important;
@@ -1484,11 +1495,11 @@ p {
     .swiper-slide,
     .swiper-slide-active {
         width: 100% !important;
-        /* End slide */
+        /* End slide 
     }
     .review {
         height: 550px !important;
-    }
+    } */
 }
 
 
@@ -1581,7 +1592,6 @@ h2.title {
 }
 
 .huongdan_btn>div {
-    padding: 0 60px;
     line-height: 60px;
     border: none;
     margin: 0;
@@ -1589,6 +1599,8 @@ h2.title {
     float: left;
     cursor: pointer;
     font-size: 20px;
+    width: 150px;
+    text-align: center;
 }
 
 .huongdan_btn>div.active {
@@ -1781,6 +1793,9 @@ h2.title {
 
 
 /* Review Slide */
+.swiper-container-mobile {
+    display: none;
+}
 
 .swiper-container {
     width: 100%;
