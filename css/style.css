@@ -435,7 +435,7 @@ p {
 .content {
     float: left;
     background-image: url('../images/background2.png');
-    min-height: 1100px;
+    min-height: 1150px;
     background-repeat: repeat;
     position: relative;
     transition: 0.5s;
@@ -1266,15 +1266,17 @@ p {
         left: 3%;
     }
     .text-banner2 {
-        width: 95%;
-        display: block;
+        width: 50%;
         left: 0%;
     }
     .text-banner .welcome h1 {
         font-size: 20pt;
     }
     .text-banner2 .welcome2 h1 {
-        font-size: 20pt;
+        font-size: 15pt;
+    }
+    .text-banner2 .welcome2 h1 span {
+        font-size: 14pt;
     }
     .text-banner .welcome .welcome__p-mobile {
         display: none

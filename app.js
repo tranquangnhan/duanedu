@@ -59,7 +59,7 @@ var nboff = document.getElementById('navmb__off');
 navbaric.addEventListener('click', shownav);
 navbarrg.addEventListener('click', hidenav);
 nboff.addEventListener('click', offnav);
-// navbaric.addEventListener('click', shownavic);
+
 
 function shownav() {
     if (navbarmb.style.transform = "translateX(100%)") {
