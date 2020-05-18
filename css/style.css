@@ -207,6 +207,95 @@ p {
 }
 
 
+/*================= start banner mobile============================ */
+
+.slideshow-container {}
+
+.dot {}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Ẩn các slider */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Định dạng nội dung Caption */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* định dạng các chấm chuyển đổi các slide */
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* khi được hover, active đổi màu nền */
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*================= banner mobile============================ */
+
+
 /* =============box__welcome2=================== */
 
 
@@ -1179,6 +1268,45 @@ p {
 /* mobile */
 
 @media only screen and (max-width:739px) {
+    /* banner mobile */
+    .slide,
+    .boxcontentbn {
+        display: none;
+    }
+    .slideshow-container {
+        position: relative;
+    }
+    .box__anh-mobile {
+        position: relative;
+    }
+    .rgba {
+        z-index: 1 !important;
+    }
+    .mySlides {
+        position: relative;
+    }
+    .text-banner {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+        width: 90%;
+        height: 50%;
+        padding-top: 0;
+        z-index: 100;
+    }
+    .text-banner .btn-dk {
+        max-width: 163px;
+        height: 46px;
+        margin: 22px 0;
+        line-height: 46px;
+    }
+    .text-banner .welcome h1 {
+        font-size: 15pt;
+    }
+    .text-banner .welcome p {
+        font-size: 9pt;
+    }
+    /* banner mobile */
     /* menu */
     .menu {
         display: none;
@@ -1250,48 +1378,6 @@ p {
         }
     }
     /* end menu */
-    /* start banner */
-    .boxbanner {
-        min-height: 500px;
-    }
-    .slide {
-        width: 100%;
-    }
-    .chuyen-slide img {
-        object-fit: cover;
-    }
-    .dieuhuong {
-        display: none;
-    }
-    .text-banner {
-        width: 95%;
-        display: block;
-        left: 3%;
-    }
-    .text-banner2 {
-        width: 50%;
-        left: 0%;
-    }
-    .text-banner .welcome h1 {
-        font-size: 20pt;
-    }
-    .text-banner2 .welcome2 h1 {
-        font-size: 15pt;
-    }
-    .text-banner2 .welcome2 h1 span {
-        font-size: 14pt;
-    }
-    .text-banner .welcome .welcome__p-mobile {
-        display: none
-    }
-    .box__welcome2 .box__welcome-left,
-    .box__welcome2 .box__welcome-right {
-        width: 95%;
-    }
-    .box__welcome2 .box__welcome-left img {
-        display: none;
-    }
-    /* end banner */
     .logo img {
         width: 70px;
         min-height: 50px;
@@ -1498,7 +1584,6 @@ p {
         display: block !important;
         position: relative;
     }
-    
     .swiper-slide {
         cursor: pointer;
         width: 100%;
@@ -1519,12 +1604,9 @@ p {
         -webkit-align-items: center;
         align-items: center;
     }
-
     .swiper-container {
         display: none;
     }
-
-    
     .swiper-pagination-bullet {
         width: 18px !important;
         height: 18px !important;
@@ -1833,6 +1915,7 @@ h2.title {
 
 
 /* Review Slide */
+
 .swiper-container-mobile {
     display: none;
 }
