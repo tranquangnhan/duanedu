@@ -91,8 +91,9 @@ for (let i = 0; i < btnxemthem1.length; i++) {
 
     function slidedown1() {
         if (boxsd1[i].clientHeight === 350 || contentshawdown.clientHeight === 420) {
-            boxsd1[i].style.height = '500px';
+            boxsd1[i].style.height = '420px';
             contenttext1[i].style.height = '100%';
+            btnxemthem1[i].innerHTML = "Thu nhỏ";
             if (body.clientWidth < 740) {
                 boxsd1.style.height = '900px';
             }
@@ -104,6 +105,7 @@ for (let i = 0; i < btnxemthem1.length; i++) {
         } else {
             boxsd1[i].style.height = '350px';
             contenttext1[i].style.height = '230px';
+            btnxemthem1[i].innerHTML = "Xem thêm";
         }
     }
 }
@@ -120,6 +122,7 @@ btnxemthem2.addEventListener('click', slidedown);
 function slidedown() {
     if (contentshawdown.clientHeight === 350 || contentshawdown.clientHeight === 420) {
         contentshawdown.style.height = '700px';
+        btnxemthem2.innerHTML = "Thu nhỏ";
         if (body.clientWidth < 740) {
             contentshawdown.style.height = '900px';
         }
@@ -136,31 +139,26 @@ function slidedown() {
     } else {
         contentshawdown.style.height = '350px';
         contenttext.style.height = '230px';
+        btnxemthem2.innerHTML = "Xem thêm";
     }
 }
 // box quyền lợi
 var iconbtn = document.querySelectorAll('.fa-angle-right');
 for (let i = 0; i < iconbtn.length; i++) {
     iconbtn[i].addEventListener('click', boxshow);
-
+    iconbtn[i].style.transition =  "0.2s";
     function boxshow() {
         var quyenloixemthem = document.querySelectorAll('.quyenloi-xemthem');
         if (quyenloixemthem[i].style.display == 'block') {
+            iconbtn[i].style.transform =  "rotate(0deg)";
             quyenloixemthem[i].style.display = 'none';
         } else {
             quyenloixemthem[i].style.display = 'block';
+            iconbtn[i].style.transform =  "rotate(90deg)";
         }
     }
 
 }
-
-
-
-
-
-
-
-
 
 
 // Phúc Bình JS

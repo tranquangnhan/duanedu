@@ -475,6 +475,10 @@ p {
     transition: 0.5s;
 }
 
+.content-shadow:hover {
+    background-color: rgba(252, 235, 0, 0.4);
+}
+
 .icon {
     width: 65px;
     height: 65px;
@@ -486,9 +490,6 @@ p {
     margin: 0 auto;
 }
 
-.yl {
-    background-color: rgba(252, 235, 0, 0.4);
-}
 
 .content__parent-about .xemthem {
     float: right;
@@ -662,6 +663,7 @@ p {
     color: white;
     font-size: 17pt;
     margin-top: 80px;
+    text-align: center;
 }
 
 .icon-blue i {
