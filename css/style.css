@@ -740,7 +740,7 @@ p {
     border-top: 30px solid transparent;
     border-bottom: 30px solid #f2f2f2;
     top: -50px;
-    left: 10%;
+    left: 15%;
 }
 
 .faq .huongdan_btn {
@@ -843,6 +843,7 @@ p {
 .footer-logo {
     margin: 0 auto;
     width: 50%;
+    text-align: center;
 }
 
 .footer i {
@@ -851,7 +852,7 @@ p {
 }
 
 .text-footer {
-    width: 70%;
+    width: 95%;
 }
 
 .foot-end {
@@ -1167,9 +1168,9 @@ p {
         width: 100px;
         margin-top: 30px !important;
     }
-    .swiper-slide {
+    /* .swiper-slide {
         width: 48% !important;
-    }
+    } */
 }
 
 
@@ -1421,7 +1422,7 @@ p {
     .contact .footer {
         width: 100%;
         margin: 0 auto;
-        padding-left: 20px;
+        padding: 20px;
     }
     .contact .footer-logo {
         width: 30%;
@@ -1430,7 +1431,7 @@ p {
         margin: auto;
     }
     .contact .footer .text-footer {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
     .contact .footer h3 {
@@ -1488,12 +1489,17 @@ p {
     .review .boxcenter {
         width: 90%;
     }
-    .swiper-container {
-        width: 100vh;
+    .swiper-container-mobile {
+        width: 100%;
         height: 100%;
+        overflow: hidden;
+        display: block !important;
+        position: relative;
     }
+    
     .swiper-slide {
         cursor: pointer;
+        width: 100%;
         text-align: center;
         font-size: 18px;
         height: max-content !important;
@@ -1511,6 +1517,12 @@ p {
         -webkit-align-items: center;
         align-items: center;
     }
+
+    .swiper-container {
+        display: none;
+    }
+
+    
     .swiper-pagination-bullet {
         width: 18px !important;
         height: 18px !important;
@@ -1618,7 +1630,6 @@ h2.title {
 }
 
 .huongdan_btn>div {
-    padding: 0 60px;
     line-height: 60px;
     border: none;
     margin: 0;
@@ -1626,6 +1637,8 @@ h2.title {
     float: left;
     cursor: pointer;
     font-size: 20px;
+    width: 150px;
+    text-align: center;
 }
 
 .huongdan_btn>div.active {
@@ -1818,6 +1831,9 @@ h2.title {
 
 
 /* Review Slide */
+.swiper-container-mobile {
+    display: none;
+}
 
 .swiper-container {
     width: 100%;
@@ -1939,6 +1955,6 @@ h2.title {
     margin-right: 30px;
 }
 
-.contact {
-    height: fit-content;
+.contact .row {
+    background-color: #f7f7f7;
 }
